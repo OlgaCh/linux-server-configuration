@@ -36,11 +36,25 @@ to clone your __Catalog App__ and run it on the server with Apache2.
  actions may be required. You may follow [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04)
  to install PostgreSQL. Then path to database needs to be update in the source
  code.
+
+5. If you perform all steps as required following list of Ubuntu packages should be installed on your VPS:
+
+* libapache2-mod-wsgi 
+
+* python-dev
+
+* python-pip
+
+* postgresql 
+
+* postgresql-contrib
+
+All project-specific requirements should be installed with virtualenv by using pip to get libraries from `requirements.txt` file.
  
-5. If project using OAUTH from Google or Facebook authorized Javascript origins
+6. If project using OAUTH from Google or Facebook authorized Javascript origins
 needs to be updated to allow requests from the App's new url.
 
-6. That's mainly it. Don't forget to restart __apache2__ service once all 
+7. That's mainly it. Don't forget to restart __apache2__ service once all 
 changes will be done to the project.
 
 
